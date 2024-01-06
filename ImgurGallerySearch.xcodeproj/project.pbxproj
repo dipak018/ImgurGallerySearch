@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		40F8C81D2B491E9000F16D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C81C2B491E9000F16D90 /* AppDelegate.swift */; };
 		40F8C81F2B491E9000F16D90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C81E2B491E9000F16D90 /* SceneDelegate.swift */; };
-		40F8C8212B491E9000F16D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8202B491E9000F16D90 /* ViewController.swift */; };
 		40F8C8242B491E9000F16D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F8C8222B491E9000F16D90 /* Main.storyboard */; };
 		40F8C8262B491E9200F16D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F8C8252B491E9200F16D90 /* Assets.xcassets */; };
 		40F8C8292B491E9200F16D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F8C8272B491E9200F16D90 /* LaunchScreen.storyboard */; };
 		40F8C8342B491E9200F16D90 /* ImgurGallerySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8332B491E9200F16D90 /* ImgurGallerySearchTests.swift */; };
 		40F8C83E2B491E9200F16D90 /* ImgurGallerySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C83D2B491E9200F16D90 /* ImgurGallerySearchUITests.swift */; };
 		40F8C8402B491E9200F16D90 /* ImgurGallerySearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C83F2B491E9200F16D90 /* ImgurGallerySearchUITestsLaunchTests.swift */; };
+		40F8C85E2B495ACB00F16D90 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C85D2B495ACB00F16D90 /* APIManager.swift */; };
+		40F8C8622B495BAB00F16D90 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8612B495BAB00F16D90 /* Constant.swift */; };
+		40F8C86B2B49626000F16D90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 40F8C86A2B49626000F16D90 /* Alamofire */; };
+		40F8C8812B498E1600F16D90 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8792B498E1600F16D90 /* HomeViewModel.swift */; };
+		40F8C8822B498E1600F16D90 /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C87B2B498E1600F16D90 /* ImageEntity.swift */; };
+		40F8C8832B498E1600F16D90 /* GalleryDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C87C2B498E1600F16D90 /* GalleryDataEntity.swift */; };
+		40F8C8842B498E1600F16D90 /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C87D2B498E1600F16D90 /* AlbumEntity.swift */; };
+		40F8C8852B498E1600F16D90 /* TagsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C87E2B498E1600F16D90 /* TagsEntity.swift */; };
+		40F8C8862B498E1600F16D90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8802B498E1600F16D90 /* HomeViewController.swift */; };
+		40F8C8892B49974400F16D90 /* ImgurGalleryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8882B49974400F16D90 /* ImgurGalleryEndpoint.swift */; };
+		40F8C88B2B49979200F16D90 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C88A2B49979200F16D90 /* EndPointType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +49,6 @@
 		40F8C8192B491E9000F16D90 /* ImgurGallerySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurGallerySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F8C81C2B491E9000F16D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F8C81E2B491E9000F16D90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40F8C8202B491E9000F16D90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40F8C8232B491E9000F16D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40F8C8252B491E9200F16D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F8C8282B491E9200F16D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,16 @@
 		40F8C8392B491E9200F16D90 /* ImgurGallerySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImgurGallerySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F8C83D2B491E9200F16D90 /* ImgurGallerySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurGallerySearchUITests.swift; sourceTree = "<group>"; };
 		40F8C83F2B491E9200F16D90 /* ImgurGallerySearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurGallerySearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40F8C85D2B495ACB00F16D90 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		40F8C8612B495BAB00F16D90 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		40F8C8792B498E1600F16D90 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		40F8C87B2B498E1600F16D90 /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
+		40F8C87C2B498E1600F16D90 /* GalleryDataEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryDataEntity.swift; sourceTree = "<group>"; };
+		40F8C87D2B498E1600F16D90 /* AlbumEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
+		40F8C87E2B498E1600F16D90 /* TagsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsEntity.swift; sourceTree = "<group>"; };
+		40F8C8802B498E1600F16D90 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		40F8C8882B49974400F16D90 /* ImgurGalleryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurGalleryEndpoint.swift; sourceTree = "<group>"; };
+		40F8C88A2B49979200F16D90 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F8C86B2B49626000F16D90 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,16 +119,15 @@
 		40F8C81B2B491E9000F16D90 /* ImgurGallerySearch */ = {
 			isa = PBXGroup;
 			children = (
+				40F8C85F2B495B4200F16D90 /* Application */,
+				40F8C8602B495B9500F16D90 /* Constant */,
 				40F8C8572B491F0200F16D90 /* Extension */,
-				40F8C8592B491F0200F16D90 /* Model */,
+				40F8C8772B498E1600F16D90 /* MVVM */,
+				40F8C8742B497E2F00F16D90 /* Resources */,
 				40F8C85A2B491F0200F16D90 /* Service */,
-				40F8C8582B491F0200F16D90 /* View */,
-				40F8C8562B491F0200F16D90 /* ViewModel */,
-				40F8C81C2B491E9000F16D90 /* AppDelegate.swift */,
-				40F8C81E2B491E9000F16D90 /* SceneDelegate.swift */,
-				40F8C8252B491E9200F16D90 /* Assets.xcassets */,
-				40F8C8272B491E9200F16D90 /* LaunchScreen.storyboard */,
-				40F8C82A2B491E9200F16D90 /* Info.plist */,
+				40F8C85C2B491F6900F16D90 /* Storyboard */,
+				40F8C8662B49611A00F16D90 /* Support */,
+				40F8C8872B49971800F16D90 /* Utility */,
 			);
 			path = ImgurGallerySearch;
 			sourceTree = "<group>";
@@ -130,13 +149,6 @@
 			path = ImgurGallerySearchUITests;
 			sourceTree = "<group>";
 		};
-		40F8C8562B491F0200F16D90 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		40F8C8572B491F0200F16D90 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,43 +156,100 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		40F8C8582B491F0200F16D90 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				40F8C85B2B491F6900F16D90 /* Controller */,
-				40F8C85C2B491F6900F16D90 /* Storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		40F8C8592B491F0200F16D90 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		40F8C85A2B491F0200F16D90 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				40F8C85D2B495ACB00F16D90 /* APIManager.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		40F8C85B2B491F6900F16D90 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				40F8C8202B491E9000F16D90 /* ViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		40F8C85C2B491F6900F16D90 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				40F8C8272B491E9200F16D90 /* LaunchScreen.storyboard */,
 				40F8C8222B491E9000F16D90 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		40F8C85F2B495B4200F16D90 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C81C2B491E9000F16D90 /* AppDelegate.swift */,
+				40F8C81E2B491E9000F16D90 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		40F8C8602B495B9500F16D90 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8612B495BAB00F16D90 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		40F8C8662B49611A00F16D90 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C82A2B491E9200F16D90 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		40F8C8742B497E2F00F16D90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8252B491E9200F16D90 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40F8C8772B498E1600F16D90 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8782B498E1600F16D90 /* ViewModel */,
+				40F8C87A2B498E1600F16D90 /* Model */,
+				40F8C87F2B498E1600F16D90 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		40F8C8782B498E1600F16D90 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8792B498E1600F16D90 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40F8C87A2B498E1600F16D90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C87B2B498E1600F16D90 /* ImageEntity.swift */,
+				40F8C87C2B498E1600F16D90 /* GalleryDataEntity.swift */,
+				40F8C87D2B498E1600F16D90 /* AlbumEntity.swift */,
+				40F8C87E2B498E1600F16D90 /* TagsEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40F8C87F2B498E1600F16D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8802B498E1600F16D90 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40F8C8872B49971800F16D90 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8882B49974400F16D90 /* ImgurGalleryEndpoint.swift */,
+				40F8C88A2B49979200F16D90 /* EndPointType.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +268,9 @@
 			dependencies = (
 			);
 			name = ImgurGallerySearch;
+			packageProductDependencies = (
+				40F8C86A2B49626000F16D90 /* Alamofire */,
+			);
 			productName = ImgurGallerySearch;
 			productReference = 40F8C8192B491E9000F16D90 /* ImgurGallerySearch.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +343,9 @@
 				Base,
 			);
 			mainGroup = 40F8C8102B491E9000F16D90;
+			packageReferences = (
+				40F8C8692B49626000F16D90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 40F8C81A2B491E9000F16D90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,9 +389,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F8C8212B491E9000F16D90 /* ViewController.swift in Sources */,
+				40F8C8862B498E1600F16D90 /* HomeViewController.swift in Sources */,
+				40F8C8822B498E1600F16D90 /* ImageEntity.swift in Sources */,
+				40F8C8892B49974400F16D90 /* ImgurGalleryEndpoint.swift in Sources */,
+				40F8C85E2B495ACB00F16D90 /* APIManager.swift in Sources */,
+				40F8C8842B498E1600F16D90 /* AlbumEntity.swift in Sources */,
+				40F8C8832B498E1600F16D90 /* GalleryDataEntity.swift in Sources */,
+				40F8C8622B495BAB00F16D90 /* Constant.swift in Sources */,
 				40F8C81D2B491E9000F16D90 /* AppDelegate.swift in Sources */,
+				40F8C88B2B49979200F16D90 /* EndPointType.swift in Sources */,
+				40F8C8812B498E1600F16D90 /* HomeViewModel.swift in Sources */,
 				40F8C81F2B491E9000F16D90 /* SceneDelegate.swift in Sources */,
+				40F8C8852B498E1600F16D90 /* TagsEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ImgurGallerySearch/Info.plist;
+				INFOPLIST_FILE = ImgurGallerySearch/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -526,7 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ImgurGallerySearch/Info.plist;
+				INFOPLIST_FILE = ImgurGallerySearch/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -657,6 +741,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40F8C8692B49626000F16D90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40F8C86A2B49626000F16D90 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40F8C8692B49626000F16D90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40F8C8112B491E9000F16D90 /* Project object */;
 }
