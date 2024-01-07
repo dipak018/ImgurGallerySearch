@@ -44,6 +44,7 @@ final class APIManager {
 
 extension APIManager {
     
+    // Generic service request
     func request<T: Codable>(
         inputString: String = "",
         modelType: T.Type,
@@ -51,7 +52,7 @@ extension APIManager {
         completion: @escaping ResultHandler<T>
     ) {
         guard let url = type.getURL(inputString: inputString) else {
-            completion(.failure(.invalidURL)) // I forgot to mention this in the video
+            completion(.failure(.invalidURL))
             return
         }        
         var request = URLRequest(url: url)
@@ -73,7 +74,7 @@ extension APIManager {
                     modelType: modelType) { response in
                         switch response {
                         case .success(let mainResponse):
-                            completion(.success(mainResponse)) // Final
+                            completion(.success(mainResponse))
                         case .failure(let error):
                             completion(.failure(error))
                         }
@@ -85,6 +86,8 @@ extension APIManager {
     }
 }
 
+
+// MARK: - Generic newtork handler for getting the data for API request
 class NetworkHandler {
     func requestDataAPI(
         url: URLRequest,
@@ -106,6 +109,7 @@ class NetworkHandler {
     }
 }
 
+// MARK: - Generic response handler for parsing resonse of API request
 class ResponseHandler {
     func parseResonseDecode<T: Decodable>(
         data: Data,

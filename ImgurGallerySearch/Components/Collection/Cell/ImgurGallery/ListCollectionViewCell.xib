@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListCollectionViewCell" id="OIe-AF-UXr" customClass="ListCollectionViewCell" customModule="ImgurGallerySearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="38T-Gs-rMA">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-nY-Lvk">
+                        <rect key="frame" x="3" y="102" width="370" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                        <color key="textColor" red="0.29751275510204084" green="0.38231636404561825" blue="0.776812287414966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDC-ha-kH4">
+                        <rect key="frame" x="3" y="3" width="130.66666666666666" height="144"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yDC-ha-kH4" firstAttribute="leading" secondItem="38T-Gs-rMA" secondAttribute="leading" constant="3" id="91S-vj-Vci"/>
+                    <constraint firstAttribute="bottom" secondItem="yDC-ha-kH4" secondAttribute="bottom" constant="3" id="GpG-VI-oUF"/>
+                    <constraint firstItem="yDC-ha-kH4" firstAttribute="top" secondItem="38T-Gs-rMA" secondAttribute="top" constant="3" id="dvE-8e-RPE"/>
+                    <constraint firstItem="yDC-ha-kH4" firstAttribute="width" secondItem="38T-Gs-rMA" secondAttribute="width" multiplier="0.35" id="fai-kb-8uH"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="373" height="128"/>
+            <connections>
+                <outlet property="cellImageView" destination="yDC-ha-kH4" id="hAh-x3-KPa"/>
+                <outlet property="titleLabel" destination="ttr-nY-Lvk" id="3js-Rg-XKT"/>
+            </connections>
+            <point key="canvasLocation" x="127.48091603053435" y="-89.436619718309871"/>
+        </collectionViewCell>
+    </objects>
+</document>
