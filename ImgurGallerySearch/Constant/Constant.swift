@@ -8,7 +8,7 @@
 enum Constant {
     enum API {
         static let clientId = "724611fb9e0c178"
-        static let supportedImageTypes = "jpg,jpeg,png,gif,anigif,album"
+        static let supportedImageTypes = "jpg,jpeg,png"
         static let gallerySearchURL = "https://api.imgur.com/3/gallery/search/top/week"
     }
 }

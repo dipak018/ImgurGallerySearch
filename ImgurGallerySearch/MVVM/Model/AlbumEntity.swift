@@ -43,7 +43,6 @@ struct AlbumEntity : Codable {
 	let is_ad : Bool?
 	let title : String?
 	let vote : String?
-	let topic_id : String?
 	let section : String?
 	let ups : Int?
 	let account_url : String?
@@ -81,7 +80,6 @@ struct AlbumEntity : Codable {
 		case is_ad = "is_ad"
 		case title = "title"
 		case vote = "vote"
-		case topic_id = "topic_id"
 		case section = "section"
 		case ups = "ups"
 		case account_url = "account_url"
@@ -120,7 +118,6 @@ struct AlbumEntity : Codable {
 		is_ad = try values.decodeIfPresent(Bool.self, forKey: .is_ad)
 		title = try values.decodeIfPresent(String.self, forKey: .title)
 		vote = try values.decodeIfPresent(String.self, forKey: .vote)
-		topic_id = try values.decodeIfPresent(String.self, forKey: .topic_id)
 		section = try values.decodeIfPresent(String.self, forKey: .section)
 		ups = try values.decodeIfPresent(Int.self, forKey: .ups)
 		account_url = try values.decodeIfPresent(String.self, forKey: .account_url)

@@ -50,7 +50,10 @@ extension ImgurGalleryEndpoint: EndPointType {
     func getURL(inputString:String) -> URL? {
         switch self {
         case .imgurGallery:
-            let urlString = "\(Constant.API.gallerySearchURL)?q=\(inputString)&q_type=\(Constant.API.supportedImageTypes)"
+            var urlString = "\(Constant.API.gallerySearchURL)?q=\(inputString)&q_type=\(Constant.API.supportedImageTypes)"
+            if let allowedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+                urlString = allowedString
+            }
             return URL(string: urlString)
         }
     }

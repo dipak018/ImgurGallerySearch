@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,31 +17,80 @@
                 <rect key="frame" x="0.0" y="0.0" width="373" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-nY-Lvk">
-                        <rect key="frame" x="3" y="102" width="370" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
-                        <color key="textColor" red="0.29751275510204084" green="0.38231636404561825" blue="0.776812287414966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDC-ha-kH4">
                         <rect key="frame" x="3" y="3" width="130.66666666666666" height="144"/>
                     </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHK-a5-zja">
+                        <rect key="frame" x="98.666666666666671" y="120" width="30.000000000000014" height="22"/>
+                        <color key="backgroundColor" red="0.68627450980392157" green="0.39215686274509803" blue="0.13725490196078433" alpha="0.71598199503311255" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="qwv-77-1Wu"/>
+                            <constraint firstAttribute="height" constant="22" id="sKk-hO-Tbz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVd-iR-w9E">
+                        <rect key="frame" x="146.33333333333337" y="3" width="223.66666666666663" height="144"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-nY-Lvk">
+                                <rect key="frame" x="0.0" y="10" width="223.66666666666666" height="0.0"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMc-HW-A2x">
+                                <rect key="frame" x="0.0" y="134" width="213.66666666666666" height="0.0"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ttr-nY-Lvk" secondAttribute="trailing" id="Jdi-Ni-seY"/>
+                            <constraint firstAttribute="trailing" secondItem="uMc-HW-A2x" secondAttribute="trailing" constant="10" id="RY7-eW-QfQ"/>
+                            <constraint firstItem="ttr-nY-Lvk" firstAttribute="leading" secondItem="UVd-iR-w9E" secondAttribute="leading" id="Zek-8e-2CV"/>
+                            <constraint firstItem="ttr-nY-Lvk" firstAttribute="top" secondItem="UVd-iR-w9E" secondAttribute="top" constant="10" id="qVq-I5-92x"/>
+                            <constraint firstAttribute="bottom" secondItem="uMc-HW-A2x" secondAttribute="bottom" constant="10" id="uA0-7a-XZ4"/>
+                            <constraint firstItem="uMc-HW-A2x" firstAttribute="leading" secondItem="UVd-iR-w9E" secondAttribute="leading" id="wPv-d7-kgF"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="UVd-iR-w9E" firstAttribute="top" secondItem="38T-Gs-rMA" secondAttribute="top" constant="3" id="0ga-aK-k40"/>
                     <constraint firstItem="yDC-ha-kH4" firstAttribute="leading" secondItem="38T-Gs-rMA" secondAttribute="leading" constant="3" id="91S-vj-Vci"/>
+                    <constraint firstItem="UVd-iR-w9E" firstAttribute="width" secondItem="38T-Gs-rMA" secondAttribute="width" multiplier="0.6" id="Cty-l3-CSa"/>
+                    <constraint firstItem="oHK-a5-zja" firstAttribute="bottom" secondItem="yDC-ha-kH4" secondAttribute="bottom" constant="-5" id="Ddg-oK-Vs1"/>
                     <constraint firstAttribute="bottom" secondItem="yDC-ha-kH4" secondAttribute="bottom" constant="3" id="GpG-VI-oUF"/>
+                    <constraint firstAttribute="trailing" secondItem="UVd-iR-w9E" secondAttribute="trailing" constant="3" id="XL1-oT-fZb"/>
                     <constraint firstItem="yDC-ha-kH4" firstAttribute="top" secondItem="38T-Gs-rMA" secondAttribute="top" constant="3" id="dvE-8e-RPE"/>
                     <constraint firstItem="yDC-ha-kH4" firstAttribute="width" secondItem="38T-Gs-rMA" secondAttribute="width" multiplier="0.35" id="fai-kb-8uH"/>
+                    <constraint firstItem="oHK-a5-zja" firstAttribute="trailing" secondItem="yDC-ha-kH4" secondAttribute="trailing" constant="-5" id="mMi-Yy-UiX"/>
+                    <constraint firstAttribute="bottom" secondItem="UVd-iR-w9E" secondAttribute="bottom" constant="3" id="owb-3e-vcI"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="373" height="128"/>
             <connections>
                 <outlet property="cellImageView" destination="yDC-ha-kH4" id="hAh-x3-KPa"/>
+                <outlet property="createdTimeLabel" destination="uMc-HW-A2x" id="9LU-9E-Mwo"/>
+                <outlet property="numberOfImagesLabel" destination="oHK-a5-zja" id="Ncl-ef-9xi"/>
                 <outlet property="titleLabel" destination="ttr-nY-Lvk" id="3js-Rg-XKT"/>
             </connections>
             <point key="canvasLocation" x="127.48091603053435" y="-89.436619718309871"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

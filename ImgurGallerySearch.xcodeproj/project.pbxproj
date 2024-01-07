@@ -40,6 +40,7 @@
 		40F8C8B52B49DB7900F16D90 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8B22B49DB7900F16D90 /* Reachability.swift */; };
 		40F8C8B62B49DB7900F16D90 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8B42B49DB7900F16D90 /* Toast.swift */; };
 		40F8C8B92B49DD6900F16D90 /* UIViewToast+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8B82B49DD6900F16D90 /* UIViewToast+Extension.swift */; };
+		40F8C8BC2B4AA2AE00F16D90 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8C8BB2B4AA2AE00F16D90 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		40F8C8B22B49DB7900F16D90 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		40F8C8B42B49DB7900F16D90 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		40F8C8B82B49DD6900F16D90 /* UIViewToast+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewToast+Extension.swift"; sourceTree = "<group>"; };
+		40F8C8BB2B4AA2AE00F16D90 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +374,7 @@
 		40F8C8A62B49BA8300F16D90 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				40F8C8BA2B4AA29F00F16D90 /* Swift */,
 				40F8C8A72B49BA8300F16D90 /* UI */,
 			);
 			path = Extensions;
@@ -410,6 +413,14 @@
 				40F8C88A2B49979200F16D90 /* EndPointType.swift */,
 			);
 			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		40F8C8BA2B4AA29F00F16D90 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				40F8C8BB2B4AA2AE00F16D90 /* Date+Extension.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F8C8BC2B4AA2AE00F16D90 /* Date+Extension.swift in Sources */,
 				40F8C8862B498E1600F16D90 /* HomeViewController.swift in Sources */,
 				40F8C8822B498E1600F16D90 /* ImageEntity.swift in Sources */,
 				40F8C8892B49974400F16D90 /* ImgurGalleryEndpoint.swift in Sources */,

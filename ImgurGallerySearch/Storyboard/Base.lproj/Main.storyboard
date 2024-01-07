@@ -26,18 +26,48 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpC-Iq-uHW">
+                                <rect key="frame" x="0.0" y="290" width="393" height="341"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="igv-pa-hIi">
+                                        <rect key="frame" x="0.0" y="1" width="393" height="117.66666666666666"/>
+                                        <color key="tintColor" red="0.68627450980000004" green="0.3921568627" blue="0.13725490200000001" alpha="0.78368170529801329" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No fesults for &quot;&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TX-2U-7UD">
+                                        <rect key="frame" x="20" y="149.33333333333331" width="353" height="26.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                        <color key="textColor" red="0.68627450980000004" green="0.3921568627" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="igv-pa-hIi" firstAttribute="centerX" secondItem="PpC-Iq-uHW" secondAttribute="centerX" id="0uS-0H-wQb"/>
+                                    <constraint firstItem="2TX-2U-7UD" firstAttribute="leading" secondItem="PpC-Iq-uHW" secondAttribute="leading" constant="20" id="DGP-1O-meG"/>
+                                    <constraint firstItem="igv-pa-hIi" firstAttribute="top" secondItem="PpC-Iq-uHW" secondAttribute="top" id="NyY-RN-ihI"/>
+                                    <constraint firstItem="igv-pa-hIi" firstAttribute="height" secondItem="PpC-Iq-uHW" secondAttribute="height" multiplier="0.35" id="QId-yQ-CoA"/>
+                                    <constraint firstAttribute="trailing" secondItem="2TX-2U-7UD" secondAttribute="trailing" constant="20" id="T59-zX-bkL"/>
+                                    <constraint firstAttribute="trailing" secondItem="igv-pa-hIi" secondAttribute="trailing" id="Wia-1b-UMj"/>
+                                    <constraint firstItem="igv-pa-hIi" firstAttribute="leading" secondItem="PpC-Iq-uHW" secondAttribute="leading" id="qef-aG-HfT"/>
+                                    <constraint firstItem="2TX-2U-7UD" firstAttribute="top" secondItem="igv-pa-hIi" secondAttribute="bottom" constant="30" id="qhg-Hv-kmS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ESU-Rg-EwX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4lC-uk-z3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PpC-Iq-uHW" secondAttribute="trailing" id="6tT-03-m5B"/>
+                            <constraint firstItem="PpC-Iq-uHW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Be0-EZ-8Nl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ESU-Rg-EwX" secondAttribute="bottom" id="L22-X4-wBT"/>
+                            <constraint firstItem="PpC-Iq-uHW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="REJ-DZ-cu3"/>
                             <constraint firstItem="ESU-Rg-EwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TbY-95-1WO"/>
+                            <constraint firstItem="PpC-Iq-uHW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dVo-B5-eaA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ESU-Rg-EwX" secondAttribute="trailing" id="nQH-gN-XYL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ocK-Ff-3aM">
-                        <barButtonItem key="rightBarButtonItem" image="square.grid.2x2" catalog="system" id="xzO-gt-Bnc">
+                        <barButtonItem key="rightBarButtonItem" image="list.bullet" catalog="system" id="xzO-gt-Bnc">
                             <connections>
                                 <action selector="toggleLayout:" destination="BYZ-38-t0r" id="5HS-Ou-t7i"/>
                             </connections>
@@ -46,11 +76,13 @@
                     <connections>
                         <outlet property="collectionView" destination="ESU-Rg-EwX" id="cGK-ud-uhn"/>
                         <outlet property="layoutToggleButton" destination="xzO-gt-Bnc" id="2Bb-qz-Yep"/>
+                        <outlet property="noResultLabel" destination="2TX-2U-7UD" id="lMe-oD-NfO"/>
+                        <outlet property="noResultView" destination="PpC-Iq-uHW" id="r3P-70-Isa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054.1984732824426" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gLw-8J-kqr">
@@ -60,6 +92,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oqY-3E-V2d">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="tertiarySystemFillColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -72,9 +105,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
