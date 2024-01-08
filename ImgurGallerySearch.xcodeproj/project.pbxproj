@@ -166,7 +166,6 @@
 				40F8C88C2B49A74D00F16D90 /* Components */,
 				40F8C85F2B495B4200F16D90 /* Application */,
 				40F8C8602B495B9500F16D90 /* Constant */,
-				40F8C8572B491F0200F16D90 /* Extension */,
 				40F8C8772B498E1600F16D90 /* MVVM */,
 				40F8C8742B497E2F00F16D90 /* Resources */,
 				40F8C85A2B491F0200F16D90 /* Service */,
@@ -192,13 +191,6 @@
 				40F8C83F2B491E9200F16D90 /* ImgurGallerySearchUITestsLaunchTests.swift */,
 			);
 			path = ImgurGallerySearchUITests;
-			sourceTree = "<group>";
-		};
-		40F8C8572B491F0200F16D90 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		40F8C85A2B491F0200F16D90 /* Service */ = {
