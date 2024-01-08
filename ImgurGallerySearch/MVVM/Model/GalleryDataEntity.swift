@@ -12,7 +12,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-struct GalleryDataEntity : Codable {
+struct GalleryDataEntity : Codable{
 	let success : Bool?
 	let data : [AlbumEntity]?
 	let status : Int?
@@ -30,5 +30,10 @@ struct GalleryDataEntity : Codable {
 		data = try values.decodeIfPresent([AlbumEntity].self, forKey: .data)
 		status = try values.decodeIfPresent(Int.self, forKey: .status)
 	}
-
+    
+    init(success:Bool,data:[AlbumEntity],status:Int){
+        self.success = success
+        self.data = data
+        self.status = status
+    }
 }

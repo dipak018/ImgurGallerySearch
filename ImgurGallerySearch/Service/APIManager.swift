@@ -20,7 +20,7 @@ typealias ResultHandler<T> = (Result<T, DataError>) -> Void
 
 typealias ResultHandlerO = (Result<GalleryDataEntity, DataError>) -> Void
 
-final class APIManager {
+class APIManager {
     
     // MARK: - Props
     static let shared = APIManager()

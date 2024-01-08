@@ -11,6 +11,7 @@ class HomeCollectionViewDatasourceDelegate: NSObject {
     // MARK: - Public Props
     var isListLayout: Bool = false
     var albumEntityArray: [AlbumEntity] = []
+    var delegate:HomeViewControllerDelegate!
 }
 
 // MARK: - UICollectionViewDataSource
@@ -30,7 +31,11 @@ extension HomeCollectionViewDatasourceDelegate: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 extension HomeCollectionViewDatasourceDelegate: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let delegate = self.delegate {
+            delegate.homeCollectionView(didSelectItemAt: indexPath)
+        }
+    }
 }
 
 extension HomeCollectionViewDatasourceDelegate {

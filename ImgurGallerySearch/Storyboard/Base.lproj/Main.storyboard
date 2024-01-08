@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ESU-Rg-EwX">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="729"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jsf-Xp-hCJ">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -59,7 +59,7 @@
                             <constraint firstItem="ESU-Rg-EwX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4lC-uk-z3L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PpC-Iq-uHW" secondAttribute="trailing" id="6tT-03-m5B"/>
                             <constraint firstItem="PpC-Iq-uHW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Be0-EZ-8Nl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ESU-Rg-EwX" secondAttribute="bottom" id="L22-X4-wBT"/>
+                            <constraint firstAttribute="bottom" secondItem="ESU-Rg-EwX" secondAttribute="bottom" constant="20" id="L22-X4-wBT"/>
                             <constraint firstItem="PpC-Iq-uHW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="REJ-DZ-cu3"/>
                             <constraint firstItem="ESU-Rg-EwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TbY-95-1WO"/>
                             <constraint firstItem="PpC-Iq-uHW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dVo-B5-eaA"/>
@@ -78,11 +78,49 @@
                         <outlet property="layoutToggleButton" destination="xzO-gt-Bnc" id="2Bb-qz-Yep"/>
                         <outlet property="noResultLabel" destination="2TX-2U-7UD" id="lMe-oD-NfO"/>
                         <outlet property="noResultView" destination="PpC-Iq-uHW" id="r3P-70-Isa"/>
+                        <segue destination="71m-HI-QpJ" kind="show" id="hN0-on-d7y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Ozx-vi-vfJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="71m-HI-QpJ" customClass="DetailsViewController" customModule="ImgurGallerySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tgx-vj-z9k">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Dd-hu-feO">
+                                <rect key="frame" x="0.0" y="103" width="393" height="729"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W76-ru-rqf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GUl-qN-1qk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Dd-hu-feO" firstAttribute="bottom" secondItem="Tgx-vj-z9k" secondAttribute="bottom" constant="-20" id="KVu-SJ-fNr"/>
+                            <constraint firstItem="2Dd-hu-feO" firstAttribute="top" secondItem="GUl-qN-1qk" secondAttribute="top" id="OS1-KW-CE3"/>
+                            <constraint firstItem="2Dd-hu-feO" firstAttribute="trailing" secondItem="GUl-qN-1qk" secondAttribute="trailing" id="Shf-57-ALd"/>
+                            <constraint firstItem="2Dd-hu-feO" firstAttribute="leading" secondItem="GUl-qN-1qk" secondAttribute="leading" id="t7i-cD-vVD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EUx-uT-pK1"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2Dd-hu-feO" id="L4j-U8-m61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbZ-jO-nrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5877862595419" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gLw-8J-kqr">

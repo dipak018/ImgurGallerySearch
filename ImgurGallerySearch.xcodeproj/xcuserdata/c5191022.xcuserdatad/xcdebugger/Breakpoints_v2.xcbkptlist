@@ -3,4 +3,54 @@
    uuid = "9B92F4D2-B779-4B59-92B3-04CC43B46FB7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95C8E0C2-3D22-43D2-9884-C40A17EBC621"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurGallerySearch/Components/Collection/DatasourceDelegate/DetailsCollectionViewDatasourceDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "gridCell(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95C8E0C2-3D22-43D2-9884-C40A17EBC621 - f02ae48711218f2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurGallerySearch.DetailsCollectionViewDatasourceDelegate.gridCell(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; ImgurGallerySearch.DetailCollectionViewCell"
+                  moduleName = "ImgurGallerySearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/c5191022/Desktop/ImgurGallerySearch/ImgurGallerySearch/Components/Collection/DatasourceDelegate/DetailsCollectionViewDatasourceDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "95C8E0C2-3D22-43D2-9884-C40A17EBC621 - f02ae48711218f2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurGallerySearch.DetailsCollectionViewDatasourceDelegate.gridCell(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; ImgurGallerySearch.DetailCollectionViewCell"
+                  moduleName = "ImgurGallerySearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/c5191022/Desktop/ImgurGallerySearch/ImgurGallerySearch/Components/Collection/DatasourceDelegate/DetailsCollectionViewDatasourceDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "3396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

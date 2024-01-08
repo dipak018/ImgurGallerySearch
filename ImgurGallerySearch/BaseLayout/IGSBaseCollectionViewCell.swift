@@ -51,10 +51,12 @@ class IGSBaseCollectionViewCell: UICollectionViewCell {
         }
         
         // Settting the count if the cell contains more than 1 images
-        if let images_count = albumEntity.images_count {
+        if let images_count = albumEntity.images?.count {
             if images_count > 1 {
                 self.numberOfImagesLabel.isHidden = false
                 self.numberOfImagesLabel.text = "+\(String(images_count-1))"
+            } else {
+                self.numberOfImagesLabel.isHidden = true
             }
         }
         

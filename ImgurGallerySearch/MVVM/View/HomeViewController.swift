@@ -109,6 +109,7 @@ private extension HomeViewController {
         self.collectionView.backgroundColor = .clear
         self.collectionView.dataSource = collectionViewDatasourceDelegate
         self.collectionView.delegate = collectionViewDatasourceDelegate
+        collectionViewDatasourceDelegate.delegate = self
         collectionView.register(cell: GridCollectionViewCell.reuseIdentifier)
         collectionView.register(cell: ListCollectionViewCell.reuseIdentifier)
     }
@@ -153,7 +154,6 @@ private extension HomeViewController {
 }
 
 // MARK: - Search Bar Delegate
-
 extension HomeViewController : UISearchBarDelegate {
     // Function calls when serarch button triggers and get response for the entered search term in search bar.
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -165,3 +165,11 @@ extension HomeViewController : UISearchBarDelegate {
     }
 }
 
+extension HomeViewController: HomeViewControllerDelegate {
+    func homeCollectionView(didSelectItemAt selectedIndexPath: IndexPath) {
+        if let controller = self.storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController{
+            controller.detailsViewModel = DetailsViewModel(albumEntity: self.collectionViewDatasourceDelegate.albumEntityArray[selectedIndexPath.row])
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+}
